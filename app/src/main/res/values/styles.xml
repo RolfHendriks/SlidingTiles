@@ -1,0 +1,54 @@
+<resources>
+
+    <color name="moma_color_blue">#6863b1</color>
+    <color name="moma_color_darkblue">#262c8d</color>
+    <color name="moma_color_red">#931a18</color>
+    <color name="moma_color_pink">#c3458d</color>
+    <color name="moma_color_white">#dcdcdc</color>
+    <color name="black">#000000</color>
+
+    <style name="MOMABlue">
+        <item name="android:textColor">@color/moma_color_white</item>
+        <item name="android:background">@color/moma_color_blue</item>
+    </style>
+
+    <style name="MOMAAlert" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">@color/moma_color_white</item>
+        <item name="android:background">@color/moma_color_blue</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/moma_color_blue</item>
+        <item name="android:colorPrimaryDark">@color/moma_color_darkblue</item>
+        <item name="android:colorAccent">@color/moma_color_pink</item>
+        <item name="android:textColorPrimary">@color/moma_color_white</item>
+        <item name="android:windowBackground">@color/black</item>
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/moma_color_blue</item>
+        <item name="android:backgroundStacked">@color/moma_color_blue</item>
+        <item name="android:backgroundSplit">@color/moma_color_blue</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@color/moma_color_blue</item>
+        <item name="backgroundStacked">@color/moma_color_blue</item>
+        <item name="backgroundSplit">@color/moma_color_blue</item>
+
+    </style>
+
+    <!-- action bar title text -->
+    <style name="TitleTextStyle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/moma_color_white</item>
+    </style>
+
+</resources>

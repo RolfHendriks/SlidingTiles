@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main.layout.root"
+    android:background="#ff000000"
+    style="@style/MOMABlue">
+
+    <RelativeLayout
+        android:id="@+id/main.footer"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/panel_border_width"
+        android:paddingRight="@dimen/panel_border_width">
+
+        <FrameLayout
+            android:layout_width="@dimen/color_swatch_size"
+            android:layout_height="@dimen/color_swatch_size"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/main_left_color"
+            android:background="@color/moma_color_pink"
+            android:layout_centerVertical="true">
+        </FrameLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main.colorSeekBar"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/main_left_color"
+            android:layout_toLeftOf="@+id/main_right_color"
+            android:layout_centerVertical="true"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/color_swatch_size"
+            android:layout_height="@dimen/color_swatch_size"
+            android:layout_alignParentRight="true"
+            android:id="@+id/main_right_color"
+            android:background="@color/moma_color_blue"
+            android:layout_centerVertical="true">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <net.rolfhendriks.modernart.TileCollectionView
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_above="@id/main.footer"
+        android:id="@+id/main.horizontalLinearLayout"
+        android:baselineAligned="false"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/main.leftVerticalLayout"
+            android:layout_weight="2"
+            android:layout_gravity="left">
+
+            <net.rolfhendriks.modernart.TileHolder
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/main_left_top_frame"
+                android:paddingLeft="@dimen/panel_border_width"
+                android:paddingTop="@dimen/panel_border_width"
+                android:paddingRight="@dimen/panel_half_border_width"
+                android:paddingBottom="@dimen/panel_half_border_width">
+
+                <net.rolfhendriks.modernart.TileView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/moma_color_blue"
+                    android:id="@+id/main_left_top_tile">
+                </net.rolfhendriks.modernart.TileView>
+            </net.rolfhendriks.modernart.TileHolder>
+
+            <net.rolfhendriks.modernart.TileHolder
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/panel_border_width"
+                android:paddingTop="@dimen/panel_half_border_width"
+                android:paddingRight="@dimen/panel_half_border_width"
+                android:paddingBottom="@dimen/panel_border_width"
+                android:id="@+id/main_left_bottom_frame">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/moma_color_pink"
+                    android:id="@+id/main_left_bottom_tile">
+                </FrameLayout>
+            </net.rolfhendriks.modernart.TileHolder>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/main.rightVerticalLayout"
+            android:layout_weight="3"
+            android:duplicateParentState="false">
+
+            <net.rolfhendriks.modernart.TileHolder
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/main_right_top_frame"
+                android:paddingTop="@dimen/panel_border_width"
+                android:paddingRight="@dimen/panel_border_width"
+                android:paddingLeft="@dimen/panel_half_border_width"
+                android:paddingBottom="@dimen/panel_half_border_width">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/moma_color_red"
+                    android:id="@+id/main_right_top_tile">
+                </FrameLayout>
+            </net.rolfhendriks.modernart.TileHolder>
+
+            <net.rolfhendriks.modernart.TileHolder
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/main_right_center_frame"
+                android:paddingRight="@dimen/panel_border_width"
+                android:paddingLeft="@dimen/panel_half_border_width"
+                android:paddingTop="@dimen/panel_half_border_width"
+                android:paddingBottom="@dimen/panel_half_border_width">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/moma_color_white"
+                    android:id="@+id/main_right_center_tile"/>
+            </net.rolfhendriks.modernart.TileHolder>
+
+            <net.rolfhendriks.modernart.TileHolder
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/main_right_bottom_frame"
+                android:paddingLeft="@dimen/panel_half_border_width"
+                android:paddingTop="@dimen/panel_half_border_width"
+                android:paddingRight="@dimen/panel_border_width"
+                android:paddingBottom="@dimen/panel_border_width">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/moma_color_darkblue"
+                    android:id="@+id/main_right_bottom_tile"/>
+            </net.rolfhendriks.modernart.TileHolder>
+        </LinearLayout>
+    </net.rolfhendriks.modernart.TileCollectionView>
+
+</RelativeLayout>
