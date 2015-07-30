@@ -7,6 +7,8 @@ import android.widget.FrameLayout;
 
 /**
  * Created by rolf on 7/18/15.
+ *
+ * Represents a rectangular area holding a tile. Unlike tiles, tile holders should never move.
  */
 public class TileHolder extends FrameLayout {
 

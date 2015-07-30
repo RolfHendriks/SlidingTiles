@@ -7,6 +7,13 @@ import android.view.View;
 
 /**
  * Created by rolf on 7/5/15.
+ *
+ * Animates a view's position and size at the same time.
+ *
+ * ViewFrameAnimator does not use translation and scaling. Instead, it changes a view's
+ * top/bottom/left/right. This implies that contents will not scale, and may
+ * change layout mid animation. This is typically the desired effect when changing a view's
+ * position and size, but may not be appropriate for all case\\s.
  */
 public class RHViewFrameAnimator extends ValueAnimator implements ValueAnimator.AnimatorUpdateListener{
     public View mView;

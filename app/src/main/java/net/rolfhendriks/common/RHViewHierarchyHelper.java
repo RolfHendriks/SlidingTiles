@@ -8,6 +8,8 @@ import android.view.ViewParent;
 
 /**
  * Created by rolf on 7/11/15.
+ *
+ * General utilities for managing views in a view hierarchy.
  */
 public class RHViewHierarchyHelper {
 

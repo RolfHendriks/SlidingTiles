@@ -4,6 +4,10 @@ import android.animation.TimeInterpolator;
 
 /**
  * Created by rolf on 7/9/15.
+ *
+ * Custom overshoot animation curve featuring configurable number of overshoots and
+ * realistic spring physics. This can be used to replace OvershootInterpolator, or to implement a
+ * spring animation that overshoots the destination multiple times.
  */
 public class RHSpringInterpolator implements TimeInterpolator{
 
@@ -14,7 +18,6 @@ public class RHSpringInterpolator implements TimeInterpolator{
         values result in more damping */
     public float mSpringDamping = 0.2f;
 
-    //public float mAmplitude = 1;
 
     public RHSpringInterpolator(){}
     public RHSpringInterpolator(int overshootCount, float springDamping){

@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 
 /**
  * Created by rolf on 6/30/15.
+ *
+ * Represents a layout containing multiple tiles.
  */
 public class TileCollectionView extends LinearLayout {
 
