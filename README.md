@@ -1,8 +1,8 @@
 # SlidingTiles
 
 <video width="416" height="842" controls>
-  <source src="/demo/Android-slidingTiles.mov" type="video/mov">
-  Your browser does not support the video tag.
+  <source src="/demo/Android-slidingTiles.mov" type="video/mov"/>
+  <img src="/demo/Android-slidingTiles.png" alt="Sliding Tiles app"/>
 </video>
 
 ## Overview
