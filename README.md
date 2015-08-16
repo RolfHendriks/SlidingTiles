@@ -57,7 +57,7 @@ thinking of colors in hue, saturation, and brightness instead of in red, green, 
 
 ### Interaction
 
-<img src="/demo/slidingTiles-tracking.gif alt="Touch tracking"/>
+<img src="/demo/slidingTiles-tracking.gif" alt="Touch tracking"/>
 
 This project uses a custom reusable gesture detector (*RHGestureDetector*) instead of Android's default gesture detector.
 There are many reasons I thought this was appropriate
@@ -95,7 +95,7 @@ For example, SpringInterpolator can overshoot its destination any number of time
 
 ### Rearranging Tiles
 
-<img src="/demo/slidingTiles-move.gif alt="Moving tiles"/>
+<img src="/demo/slidingTiles-move.gif" alt="Moving tiles"/>
 
 Rearranging tiles on dragging was the most challenging part of the project, mainly due to 
 using nested LinearLayouts. A flattened View hierarchy using RelativeLayout or AbsoluteLayout 
