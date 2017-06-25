@@ -149,7 +149,7 @@ for rearranging tiles simple (and changeable in a future iteration!) by abstract
 detail that the view hierarchy is arranged in an unintuitive way.
 
 
-###Conclusion
+## Conclusion
 
 I made this project to explore the fundamentals of layout, animation, and interaction on Android in depth. I spent many hours 
 and dove deep into the vast pool of Android SDKs and documentation to make the interface look and feel exactly the way I wanted it to, 
